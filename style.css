@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: PTSans-Regular;
+    src: url("fonts/PTSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: PTSans-Bold;
+    src: url("fonts/PTSans-Bold.ttf");
+}
+
+body {
+    font-family: PTSans-Regular, sans-serif;
+}
+
+.header {
+    background: #265C9A;
+    width: 100%;
+    padding: 21px 0 16px 0;
+}
+
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 86px;
+}
+
+.header__phone {
+    color: #FFFFFF;
+    margin-right: 86px;
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.header__search {
+    margin-right: 294px;
+    position: relative;
+}
+
+.header__search-input {
+    padding: 0 0 1px 21px;
+    background: #265C9A;
+    border: 0;
+    width: 281px;
+    height: 22px;
+    border-bottom: 1px solid #517DAE;
+}
+
+.header__search-input::placeholder {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.header__search-input-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header__delivery a {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.header__delivery:hover a {
+    color: #FBFF3D;
+}
+
+.menu {
+    background: #1F497B;
+}
+
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0 12px 0;
+}
+
+.menu__items {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 39px;
+}
+
+.menu__item:hover a {
+    color: #FBFF3D;
+}
+
+.menu__item a {
+    text-decoration: none;
+    font-family: PTSans-Bold, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+}
+
+.basket:hover .basket__text a,
+.basket:hover .basket__image {
+    fill: #FBFF3D;
+    color: #FBFF3D;
+}
+
+.basket__image {
+    margin-right: 9px;
+    cursor: pointer;
+    fill: #FFFFFF;
+}
+
+.basket__text a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
