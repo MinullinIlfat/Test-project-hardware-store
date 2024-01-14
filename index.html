@@ -67,14 +67,40 @@
 
 <section class="filter">
     <div class="container">
-        <select name="" id="">
-            <option value="">Любого логотипа</option>
-            <option value="">Компакт-камера</option>
-            <option value="">Беззеркальная</option>
-            <option value="">Зеркальная</option>
-            <option value="">Среднеформатная</option>
-        </select>
-    </div>
+        <div class="filter__select">
+            <div class="filter__select-items">
+                <select class="filter__select-item">
+                    <option selected value="" class="hide-input">Любого логотипа</option>
+                    <option value="">Компакт-камера</option>
+                    <option value="">Беззеркальная</option>
+                    <option value="">Зеркальная</option>
+                    <option value="">Среднеформатная</option>
+                </select>
+                <select class="filter__select-item">
+                    <option selected value="" class="hide-input">Любого бренда</option>
+                    <option value="">Canon</option>
+                    <option value="">Nikon</option>
+                    <option value="">Sony</option>
+                    <option value="">Fujifilm</option>
+                    <option value="">Samsung</option>
+                    <option value="">Olympus</option>
+                </select>
+            </div>
+            <div class="filter__price">
+                <div class="filter__price-text price">
+                    ПО ЦЕНЕ
+                </div>
+                <div class="filter__price-range">
+                    <input class="filter__price-range-input from" id="from-input" placeholder="500 000">
+                    <label for="from-input" class="from-input">от</label>
+                    <input class="filter__price-range-input to" id="to-input" placeholder="25 000 000">
+                    <label for="to-input" class="to-input">до</label>
+                </div>
+                <div class="filter__price-text currency">
+                    РУБЛЕЙ
+                </div>
+            </div>
+        </div>
 </section>
 
 </body>
